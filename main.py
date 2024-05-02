@@ -1,0 +1,6 @@
+file = open("sequence.txt", "r", encoding="utf8")
+a = file.readline().rstrip()
+a = a.replace("DF", "D F")
+a = a.split(" ")
+a = map(lambda x: len(x), a)
+print(max(a))
